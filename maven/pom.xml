@@ -53,7 +53,12 @@
         </plugins>
     </build>
 
-    <parent></parent>        <!-- 定义该模块的父模块,产生继承 -->
+	<!-- 定义该模块的父模块,产生继承 -->
+	<parent>
+	     <artifactId>example-basic</artifactId>
+	     <groupId>xyz.antsgroup.example</groupId>
+	     <version>1.0-SNAPSHOT</version>
+	</parent> 
     <modules>
         <module></module>    <!-- 在编译打包以个项目时有很多模块,逐一执行会麻烦,加在这里,可以统一加在一起生成一个jar -->
     </modules>
