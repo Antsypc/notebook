@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- 当前pom版本 -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 描述该模块 -->
+    <groupId>xyz.antsgroup.project</groupId>  <!-- 公司网址+项目名 -->
+    <artifactId>project-example</artifactId>  <!-- 项目名+模块名,maven基于模块管理,所以该pom也是对该模块的说明 -->
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>                <!-- 默认打包为jar,也可以是war,zip,pom -->
+    <name>this is an example</name>           <!-- 项目描述名 -->
+    <url>example.antsgroup.xyz/maven</url>    <!-- 项目网址 -->
+    <description></description>               <!-- 项目描述 -->
+    <developers></developers>                 <!-- 开发人员 -->
+    <licences></licences>                     <!-- 项目许可证信息,如开源协议 -->
+    <organization></organization>             <!-- 组织信息 -->
+
+    <!-- 依赖 -->
+    <dependencies>
+        <!-- jdbc -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <type></type>
+            <scope>test</scope>               <!-- 默认为compile,对编译测试运行都有效;test只有测试时有效;provided在测试和编译有效,比如servlet在打包时不需要加入,tomcat已有;runtime在测试和运行时有效,比如jdbc驱动 -->
+            <optional></optional>             <!-- 设置依赖是否可选,默认是false,子项目直接继承.如果为true,子项目必须显示引入 -->
+            <exclusions>                      <!-- 如果A继承B,B继承C,默认情况下,A同时引入B和C的jar包.现在A只想与B产生关联,不想引入A,则可以使用exclusion -->
+                <exclusion>       <!-- 排除不需要的依赖-->
+                    <groupId></groupId>
+                    <artifactId></artifactId>
+                    <version></version>
+                </exlusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+    <!-- 依赖管理 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency></dependency>
+        </dependencies>     
+    </dependencyManagement>
+
+    <build>
+        <!-- 插件列表 -->
+        <plugins>
+            <groupId></groupId>
+            <artifactId></artifactId>
+            <version></version>
+        </plugins>
+    </build>
+
+    <parent></parent>        <!-- 定义该模块的父模块,产生继承 -->
+    <modules>
+        <module></module>    <!-- 在编译打包以个项目时有很多模块,逐一执行会麻烦,加在这里,可以统一加在一起生成一个jar -->
+    </modules>
+</project>
