@@ -16,6 +16,11 @@
     <developers></developers>                 <!-- 开发人员 -->
     <licences></licences>                     <!-- 项目许可证信息,如开源协议 -->
     <organization></organization>             <!-- 组织信息 -->
+    
+    <properties>
+    	<!-- 编码设置 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <!-- 依赖 -->
     <dependencies>
@@ -47,9 +52,27 @@
     <build>
         <!-- 插件列表 -->
         <plugins>
-            <groupId></groupId>
-            <artifactId></artifactId>
-            <version></version>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>	<!-- 源文件编码 -->
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <directory>web</directory>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
