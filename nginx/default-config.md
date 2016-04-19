@@ -1,0 +1,114 @@
+server {
+    # listen 和 server_name 唯一标识一个 server
+    listen       80 default_server; # default_server 是针对端口的,为同一个监听端口的 server 指定 default server.一台主机有多个 IP,那么可以为每个
+ IP 的每个端口设置一个 default_server.如果没有指定默认 server, 第一个就是.
+    server_name  localhost antsgroup.xyz ixxy.xyz www.antsgroup.xyz www.ixxy.xyz; # 如果 request header 中 HOST 是这些域名,则交给该 server,如果>多个 server 都没匹配就交给默认 server 处理.
+
+    #charset koi8-r;
+    #access_log  /var/log/nginx/log/host.access.log  main;
+    root /usr/share/nginx/html;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm index.php;
+    }
+
+    location /course/ {
+        proxy_pass http://localhost:8080/course/;
+    }
+
+    # 地址末尾斜线可有可无, location后地址最好以 '/' 结尾.
+    # 当访问 http://localhost:80/mydata/sth 会从 /usr/share/nginx/data/mydata/sth 下寻找,即最终路径是请求 URI 加 root 路径.
+    location /mydata/ {
+        root /usr/share/nginx/data/;
+    }
+
+    # 所以以 .txt 结尾的 URI 都从 /usr/share/nginx/data/ + URI 寻找
+    location ~\.txt$ {
+        root /usr/share/nginx/data/;
+    }
+
+    location ~\.php$ {
+        #root html;
+        fastcgi_pass 127.0.0.1:9000;
+        #fastcgi_pass unix:/var/run/php-fpm.socket;
+        fastcgi_index index.php;
+        #fastcgi_param wx-antsgroup.php /usr/share/nginx/html/wx-antsgroup.php;
+        fastcgi_param  SCRIPT_FILENAME   $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    #error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+    #
+    #location ~ \.php$ {
+    #    proxy_pass   http://127.0.0.1;
+    #}
+
+    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+    #
+    #location ~ \.php$ {
+    #    root           html;
+    #    fastcgi_pass   127.0.0.1:9000;
+    #    fastcgi_index  index.php;
+    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+    #    include        fastcgi_params;
+    #}
+
+    # deny access to .htaccess files, if Apache's document root
+    # concurs with nginx's one
+    #
+    #location ~ /\.ht {
+    #    deny  all;
+    #}
+}
+        #fastcgi_param wx-antsgroup.php /usr/share/nginx/html/wx-antsgroup.php;
+        fastcgi_param  SCRIPT_FILENAME   $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    #error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+    #
+    #location ~ \.php$ {
+    #    proxy_pass   http://127.0.0.1;
+    #}
+
+    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+    #
+    #location ~ \.php$ {
+    #    root           html;
+    #    fastcgi_pass   127.0.0.1:9000;
+    #    fastcgi_index  index.php;
+    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+    #    include        fastcgi_params;
+    #}
+
+    # deny access to .htaccess files, if Apache's document root
+    # concurs with nginx's one
+    #
+    #location ~ /\.ht {
+    #    deny  all;
+    #}
+}
+server {
+    listen 80;
+    server_name ""; # 如果 request header 没有 Host 域,则返回 444.这一行参数也可不写,默认即为"". 注意,这里是值没有 Host 域而不是 Host 域值不对.
+    return 444;
+}
