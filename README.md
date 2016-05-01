@@ -21,6 +21,9 @@ notebook
 - [容器安全管理](Java-Web/容器安全管理.md)
 - [keytool 命令](Java-Web/keytool.md)
 
+## [Java](Java/)
+- [Effective Java](Java/Effective-Java/)
+
 ## [JavaScript](JavaScript/)
 - [jQuery](JavaScript/jQuery/)
     - [学习策略](JavaScript/jQuery/学习策略.md)
