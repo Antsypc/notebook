@@ -5,3 +5,4 @@ Effective Java
 ## 创建和销毁对象
 - [考虑使用静态工厂方法代替构造器(Constructor)](创建和销毁对象.md#考虑使用静态工厂方法代替构造器Constructor)
 - [构造方法参数过多考虑使用构建器(Builder)](创建和销毁对象.md#构造方法参数过多考虑使用构建器Builder)
+- [利用私有构造器或Enum强化Singleton](创建和销毁对象.md#利用私有构造器或Enum强化Singleton)
