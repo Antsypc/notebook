@@ -16,3 +16,4 @@ Effective Java
 - [覆盖equals方法时总要覆盖hashCode方法](对所有对象都通用的方法.md#覆盖equals方法时总要覆盖hashCode方法)
 - [覆盖toString便于阅读](对所有对象都通用的方法.md#覆盖toString便于阅读)
 - [谨慎覆盖clone方法](对所有对象都通用的方法.md#谨慎覆盖clone方法)
+- [考虑实现Comparable接口](对所有对象都通用的方法.md#考虑实现Comparable接口)
