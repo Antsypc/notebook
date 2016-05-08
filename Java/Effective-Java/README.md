@@ -20,3 +20,4 @@ Effective Java
 
 ## 类和接口
 - [类和成员的可访问性最小化](类和接口.md#类和成员的可访问性最小化)
+- [public类应使用public访问方法而非public域](类和接口.md#public类应使用public访问方法而非public域)
