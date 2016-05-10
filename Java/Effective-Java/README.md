@@ -22,3 +22,4 @@ Effective Java
 - [类和成员的可访问性最小化](类和接口.md#类和成员的可访问性最小化)
 - [public类应使用public访问方法而非public域](类和接口.md#public类应使用public访问方法而非public域)
 - [使可变性变小](类和接口.md#使可变性变小)
+- [复合优先于继承](类和接口.md#复合优先于继承)
