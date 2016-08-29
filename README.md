@@ -23,6 +23,7 @@ notebook
 
 ## [Java](Java/)
 - [Effective Java](Java/Effective-Java/)
+- [JVM](Java/JVM/)
 
 ## [JavaScript](JavaScript/)
 - [jQuery](JavaScript/jQuery/)
