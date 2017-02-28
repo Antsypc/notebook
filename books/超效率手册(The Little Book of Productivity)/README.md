@@ -8,8 +8,8 @@
 
 ## 目录
 - 第1章 [克服拖延症(Procrastination)](1 克服拖延症(Procrastination).md)
-    - [制定短期计划](1 克服拖延症(Procrastination).md#制定短期计划(Weekly/Daily Goals))
-    - [限定时间](1 克服拖延症(Procrastination).md#限定时间(Timeboxing))
+    - [制定短期计划](1 克服拖延症(Procrastination).md#制定短期计划weeklydaily-goals)
+    - [限定时间](1 克服拖延症(Procrastination).md#限定时间timeboxing)
 - 第2章 做事更有条理
 - 第3章 保持活力
 - 第4章 按时完成任务
