@@ -2,14 +2,17 @@
 =======================
 **原著** Scott Young， **译者** [Ants Young](https://github.com/Antsypc)
 
-- [英文原文下载](The Little Book Of Productivity - Scott H Young.pdf) 
-- 欢迎提交`pull request`, 或勘误联系：antsyoung@qq.com
+- [英文原文下载](https://www.scotthyoung.com/blog/Programs/TheLittleBookOfProductivity_preview.pdf) 
+- 欢迎提交`pull request`或`issue`, 或勘误联系：antsyoung@qq.com
 - [英文总结推荐](http://www.stafforini.com/blog/summary-of-the-little-book-of-productivity-by-scott-young/)
 
 ## 目录
 - 第1章 [克服拖延症(Procrastination)](1 克服拖延症(Procrastination).md)
     - [制定短期计划](1 克服拖延症(Procrastination).md#制定短期计划weeklydaily-goals)
     - [限定时间](1 克服拖延症(Procrastination).md#限定时间timeboxing)
+    - [分解任务](1 克服拖延症(Procrastination).md#分解任务)
+    - [短跑理论](1 克服拖延症(Procrastination).md#短跑理论)
+    - [严格按计划执行](1 克服拖延症(Procrastination).md#严格按计划执行)
 - 第2章 做事更有条理
 - 第3章 保持活力
 - 第4章 按时完成任务
@@ -22,6 +25,6 @@
 
 首先，看看我们的第一条：
 
-**必须找一个你需要提高效率的理由**。请写下你会用节约下来的时间和精力去做什么。你会用来做更有意思的事情吗？还是躺在沙滩上享受日光浴。如果你对节约下来的时间有清晰的计划，那你就不会感到无聊了。
+**必须找一个需要提高效率的理由**。请写下你会用节约下来的时间和精力去做什么。你会用来做更有意思的事情吗？还是躺在沙滩上享受日光浴。如果你对节约下来的时间有清晰的计划，那你就不会感到无聊了。
 
-写下你满满的计划才会有提高效率动力。有些计划很容易实现，有些需要花很多功夫。你有提高效率的动力，才能更好地学习剩下的98条小建议。
+只有你写下满满的计划才会有提高效率的动力。有些计划很容易实现，有些需要花很多功夫。你有提高效率的动力，才能更好地学习剩下的98条小建议。
