@@ -13,6 +13,9 @@
     - [分解任务](1 克服拖延症(Procrastination).md#分解任务)
     - [短跑理论](1 克服拖延症(Procrastination).md#短跑理论)
     - [严格按计划执行](1 克服拖延症(Procrastination).md#严格按计划执行)
+    - [自律](1 克服拖延症(Procrastination).md#自律)
+    - [使用自我暗示的咒语](1 克服拖延症(Procrastination).md#使用自我暗示的咒语)
+    - [清除潜在的障碍](1 克服拖延症(Procrastination).md#清除潜在的障碍)
 - 第2章 做事更有条理
 - 第3章 保持活力
 - 第4章 按时完成任务
