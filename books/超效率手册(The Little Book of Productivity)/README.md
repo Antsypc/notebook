@@ -7,18 +7,21 @@
 - [英文总结推荐](http://www.stafforini.com/blog/summary-of-the-little-book-of-productivity-by-scott-young/)
 
 ## 目录
-- 第1章 [克服拖延症(Procrastination)](1 克服拖延症(Procrastination).md)
-    - [制定短期计划](1 克服拖延症(Procrastination).md#制定短期计划weeklydaily-goals)
-    - [限定时间](1 克服拖延症(Procrastination).md#限定时间timeboxing)
-    - [分解任务](1 克服拖延症(Procrastination).md#分解任务)
-    - [短跑理论](1 克服拖延症(Procrastination).md#短跑理论)
-    - [严格按计划执行](1 克服拖延症(Procrastination).md#严格按计划执行)
-    - [自律](1 克服拖延症(Procrastination).md#自律)
-    - [使用自我暗示的咒语](1 克服拖延症(Procrastination).md#使用自我暗示的咒语)
-    - [清除潜在的障碍](1 克服拖延症(Procrastination).md#清除潜在的障碍)
-    - [动力催化剂](1 克服拖延症(Procrastination).md#动力催化剂)
-    - [转换思路](1 克服拖延症(Procrastination).md#转换思路)
-    - [创造无干扰的工作环境](1 克服拖延症(Procrastination).md#创造无干扰的工作环境)
+- 第1章 [克服拖延症](1 克服拖延症.md)
+    - [制定短期计划](1 克服拖延症.md#制定短期计划)
+    - [限定时间](1 克服拖延症.md#限定时间)
+    - [分解任务](1 克服拖延症.md#分解任务)
+    - [短跑理论](1 克服拖延症.md#短跑理论)
+    - [严格按计划执行](1 克服拖延症.md#严格按计划执行)
+    - [自律](1 克服拖延症.md#自律)
+    - [使用自我暗示的咒语](1 克服拖延症.md#使用自我暗示的咒语)
+    - [清除潜在的障碍](1 克服拖延症.md#清除潜在的障碍)
+    - [动力催化剂](1 克服拖延症.md#动力催化剂)
+    - [转换思路](1 克服拖延症.md#转换思路)
+    - [创造无干扰的工作环境](1 克服拖延症.md#创造无干扰的工作环境)
+    - [不要模棱两可](1 克服拖延症.md#不要模棱两可)
+    - [预备瞄准发射](1 克服拖延症.md#预备瞄准发射)
+    - [改掉拖延的坏习惯](1 克服拖延症.md#改掉拖延的坏习惯)
 - 第2章 做事更有条理
 - 第3章 保持活力
 - 第4章 按时完成任务
